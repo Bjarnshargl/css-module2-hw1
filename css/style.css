@@ -8,10 +8,37 @@ header {
   background-color: lightblue;
 }
 
+img {
+  border-style: groove;
+  justify-self: center;
+  max-width: 100%;
+}
+
 nav {
+  display: inline-block;
+  width: 80%;
   background-color: azure;
   border-style: solid;
-  margin: 5px;
+  /* flex-wrap: wrap; */
+}
+
+nav ul {
+  display: inline-block;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav img {
+  display: inline-block;
+  width: 10%;
+  vertical-align: middle;
 }
 
 main {
@@ -24,7 +51,8 @@ footer {
   border-style: solid;
 }
 
-li {
+
+/* li {
   display: inline-block;
   background-color: antiquewhite;
   width: 27%;
@@ -36,7 +64,7 @@ li {
   list-style-position: inside;
   border-style: solid;
   margin: 5px;
-}
+} */
 
 h1 {
   text-align: center;
@@ -45,11 +73,16 @@ h1 {
   margin: 5px;
 }
 
-p {
+/* p {
   line-height: 25px;
-}
+} */
 
-img {
-  border-style: groove;
-  margin: 5px;
+.two-columns {
+   /* justify-content, align-items, and row-gap  */
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  justify-items: center;
+  gap:20px;
+  background-color: azure;
 }
