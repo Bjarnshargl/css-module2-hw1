@@ -11,7 +11,7 @@ header {
 img {
   border-style: groove;
   justify-self: center;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 nav {
@@ -85,4 +85,8 @@ h1 {
   justify-items: center;
   gap:20px;
   background-color: azure;
+}
+
+.two-columns img {
+  max-width: 100%;
 }
