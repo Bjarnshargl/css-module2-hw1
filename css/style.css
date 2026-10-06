@@ -15,11 +15,11 @@ img {
 }
 
 nav {
+  /* The nav tag is styled with a new display and width. */
   display: inline-block;
   width: 80%;
   background-color: azure;
   border-style: solid;
-  /* flex-wrap: wrap; */
 }
 
 nav ul {
@@ -39,6 +39,25 @@ nav img {
   display: inline-block;
   width: 10%;
   vertical-align: middle;
+}
+
+.two-columns {
+   /* justify-content, align-items, and row-gap  */
+  display: grid;
+  grid-template-columns: 40% 40%;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  row-gap:20px;
+  background-color: azure;
+}
+
+.two-columns img {
+  max-width: 100%;
+}
+
+#main-content-index {
+  min-height: 800px;
 }
 
 main {
@@ -76,17 +95,3 @@ h1 {
 /* p {
   line-height: 25px;
 } */
-
-.two-columns {
-   /* justify-content, align-items, and row-gap  */
-  display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content: center;
-  justify-items: center;
-  gap:20px;
-  background-color: azure;
-}
-
-.two-columns img {
-  max-width: 100%;
-}
